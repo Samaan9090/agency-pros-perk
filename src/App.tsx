@@ -13,6 +13,8 @@ import FAQ from "./pages/FAQ";
 import SubmitAgency from "./pages/SubmitAgency";
 import Sponsorship from "./pages/Sponsorship";
 import AllAgencies from "./pages/AllAgencies";
+import ContactUs from "./pages/ContactUs";
+import PressReleases from "./pages/PressReleases";
 
 const queryClient = new QueryClient();
 
@@ -32,6 +34,8 @@ const App = () => (
           <Route path="/submit-agency" element={<SubmitAgency />} />
           <Route path="/sponsorship" element={<Sponsorship />} />
           <Route path="/all-agencies" element={<AllAgencies />} />
+          <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/press-releases" element={<PressReleases />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
